@@ -28,7 +28,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 
-‘‘‘hcl
+```hcl
 terraform {
   required_providers {
     linode = {
@@ -37,4 +37,10 @@ terraform {
     }
   }
 }
-‘‘‘
+```
+
+```mermaid
+graph TD;
+    User-->CDN;
+    CDN-->Origin;
+```
