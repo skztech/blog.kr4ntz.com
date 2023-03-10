@@ -20,8 +20,8 @@
 
 title: There is no fog, only Clouds
 email: stefan@kr4ntz.com
-description: >- # this means to ignore newlines until "baseurl:"
-  There is no fog, only Clouds
+#description: >- # this means to ignore newlines until "baseurl:"
+#  There is no fog, only Clouds
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.kr4ntz.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
@@ -34,6 +34,14 @@ plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
 show_downloads: false
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: "Stefan Krantz"
+      
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
